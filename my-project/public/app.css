@@ -1,4 +1,17 @@
 body {
     background: blue;
     color: white; 
+    max-width: 600px;
+    margin: auto;
+}
+
+header {
+    background-image: linear-gradient(to right, #e514de, #bb1291 );
+}
+
+book-list{
+        background: white;
+        color: black; 
+        max-width: 600px;
+        margin: auto;
 }

@@ -2,6 +2,6 @@
 
 @section('content')
 
-Loan a book
+Remove a book
 
 @endsection
