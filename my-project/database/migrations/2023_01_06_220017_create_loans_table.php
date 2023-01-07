@@ -13,16 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('books', function (Blueprint $table) {
+        Schema::create('loans', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('author');
-            $table->timestamp('publication_date');
-            $table->integer('number_of_pages');
-            $table->float('dewey_reference');
-            $table->string('cover_image');
+            $table->string('book_id');
+            $table->string('borrower_name');
+            $table->timestamp('loan_start');
+            $table->timestamp('loan_end')->nullable();
         });
-
     }
 
     /**
@@ -32,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('books');
+        Schema::dropIfExists('loans');
     }
 };
