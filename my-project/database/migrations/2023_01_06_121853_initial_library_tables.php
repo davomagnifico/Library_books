@@ -22,7 +22,6 @@ return new class extends Migration
             $table->float('dewey_reference');
             $table->string('cover_image');
         });
-
     }
 
     /**
