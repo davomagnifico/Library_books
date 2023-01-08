@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('author');
             $table->timestamp('publication_date');
             $table->integer('number_of_pages');
-            $table->float('dewey_reference');
-            $table->string('cover_image');
+            $table->float('dewey_reference')->nullable();
+            $table->string('cover_image')->nullable();
         });
     }
 

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('book_id');
             $table->string('borrower_name');
+            $table->bigInteger('borrower_id');
             $table->timestamp('loan_start');
             $table->timestamp('loan_end')->nullable();
         });
